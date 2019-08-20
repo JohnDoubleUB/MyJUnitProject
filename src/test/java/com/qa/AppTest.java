@@ -24,6 +24,8 @@ public class AppTest
 
     @Test
     public void blackJackTest(){
+        app = new App();
+
         assertEquals(app.blackJack(10, 21), 21);
         assertEquals(app.blackJack(20, 18), 20);
         assertEquals(app.blackJack(1, 22), 1);
